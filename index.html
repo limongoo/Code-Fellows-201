@@ -29,12 +29,13 @@
                 <li>Start a coding career</li>
               </ol>
         <script type="text/javascript">
+        // javascript for guessing game
         var userName = prompt("Hi I am James. Who are you?");
           if (userName === "") {
             userName = "Dummy";
         };
         alert("Hi " + userName + ", read my site to learn more about me.");
-
+        // guess my hometown
           var city = prompt("OK, now that you read my site, answer 3 questions about me. \n What town did I gow up in?");
             var testCity = city.toUpperCase();
               console.log(testCity);
@@ -43,7 +44,7 @@
             } else {
               alert("Sorry, I grew up in Redding");
             };
-
+        // guess the city in Japan where I lived
           var japan = prompt("In what city on Japan did I live?");
               var testJapan = japan.toUpperCase();
                 console.log(testJapan);
@@ -52,7 +53,7 @@
               } else {
                 alert("Sorry, I lived in Toyonaka.");
               };
-
+        // guess my school
           var university = prompt("Which University to I attend for my BS degree?");
                 var testUniversity = university.toUpperCase();
                   console.log(testUniversity);
@@ -62,33 +63,17 @@
                 alert("Sorry, I went to Santa Clara University");
               };
 
-              // Guess a number between 1 and 10
-              var myNumber = 4;
-              var guess = parseInt(prompt("Guess a number between 1 - 10"));
-              console.log(guess)
-                if (guess === myNumber) {
+        // Guess a number between 1 and 10
+          var myNumber = 4;
+          var guess = parseInt(prompt("Guess a number between 1 - 10"));
+                console.log(guess);
+              if (guess === myNumber) {
                   alert("Correct!");
                 } else if (guess < myNumber) {
                   alert("Too low");
                 } else {
                   alert("Too high");
                 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           </script>
     </body>
