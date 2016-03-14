@@ -1,32 +1,74 @@
-v        var userName = prompt("Hi I am James. Who are you?");
+    // Get user name
+       var userName = prompt("Hi I am James. Who are you?");
           if (userName === "") {
             userName = "Dummy";
         };
         alert("Hi " + userName + ", read my site to learn more about me.");
 
+        // Count right answers
+        var countCorrect = 0;
+
+        // Guess my hometown
           var city = prompt("OK, now that you read my site, answer 3 questions about me. \n What town did I gow up in?");
             var testCity = city.toUpperCase();
               console.log(testCity);
           if (testCity === "REDDING" || testCity === "REDDING, CA" || testCity === "REDDING, CALIFORNIA") {
             alert("Redding is Correct!");
+            countCorrect++;
+            console.log(countCorrect);
             } else {
               alert("Sorry, I grew up in Redding");
             };
 
-          var japan = prompt("In what city on Japan did I live?");
-              var testJapan = japan.toUpperCase();
+      // Guess the city in Japan where I lived
+        var japan = prompt("In what city in Japan did I live?");
+            var testJapan = japan.toUpperCase();
                 console.log(testJapan);
-                if (testJapan === "TOYONAKA" || testJapan === "TOYONAKA, JAPAN") {
+            if (testJapan === "TOYONAKA" || testJapan === "TOYONAKA, JAPAN") {
                 alert("That is correct!!");
+                countCorrect++;
+                console.log(countCorrect);
               } else {
                 alert("Sorry, I lived in Toyonaka.");
               };
 
+      // Guess my school
           var university = prompt("Which University to I attend for my BS degree?");
                 var testUniversity = university.toUpperCase();
                   console.log(testUniversity);
               if (testUniversity === "SANTA CLARA" || testUniversity === "SANTA CLARA UNIVERSITY" || testUniversity === "SCU") {
                 alert("Correct! Go Broncos!!");
+                countCorrect++;
+                  console.log(countCorrect);
               } else {
                 alert("Sorry, I went to Santa Clara University");
               };
+
+    // Send out the results of countCorrect
+      alert("You got " +countCorrect+ " out of 3 correct!");
+      // Guess a number between 1 and 10
+          var myNumber = 4;
+          var guess = parseInt(prompt("Guess a number between 1 - 10"));
+                  console.log(guess);
+                  if (guess === myNumber) {
+                        alert("Correct!");
+                      } else if (guess < myNumber) {
+                        alert("Too low");
+                      } else {
+                    alert("Too high");
+                };
+
+      // Guess a number between 1 and 10
+          var anotherGuess;
+          var targetNumber = 8;
+              while (anotherGuess != targetNumber) {
+                anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
+                      console.log(anotherGuess);
+                  if (anotherGuess === targetNumber) {
+                        alert("Correct!");
+                      } else if (anotherGuess < targetNumber) {
+                        alert("Too low");
+                      } else {
+                    alert("Too high");
+                    }
+                  };

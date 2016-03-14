@@ -6,7 +6,7 @@
   </head>
   <body>
       <h1>James C. Smith</h1>
-        <p>I was born in Redding, CA. I attended Santa Clara University in the Silicon Valley, and I earned a degree in Finance. After graduation, I travelled to Japan. I lived in Toyonka, outside of Osaka, where I taught conversational English for a year. I moved to Portland from Berkeley over 10 years ago.</p>
+        <p>I was born in <strong>Redding, CA</strong>. I attended <strong>Santa Clara University</strong> in the Silicon Valley, and I earned a degree in Finance. After graduation, I travelled to Japan. I lived in <strong>Toyonka</strong>, outside of Osaka, where I taught conversational English for a year. I moved to Portland from Berkeley over 10 years ago.</p>
           <h2>Experience</h2>
             <p>I am a veteran of the technology and professional services industry. I am an experienced market and competitive intelligence analyst. I honed my research and analysis skills at leading firms such as Deloitte and Gartner Group. Here is a list of my recent professional experience:</p>
             <ul>
@@ -28,53 +28,7 @@
                 <li>Build websites for myself and my wife</li>
                 <li>Start a coding career</li>
               </ol>
-        <script type="text/javascript">
-        // javascript for guessing game
-        var userName = prompt("Hi I am James. Who are you?");
-          if (userName === "") {
-            userName = "Dummy";
-        };
-        alert("Hi " + userName + ", read my site to learn more about me.");
-        // guess my hometown
-          var city = prompt("OK, now that you read my site, answer 3 questions about me. \n What town did I gow up in?");
-            var testCity = city.toUpperCase();
-              console.log(testCity);
-          if (testCity === "REDDING" || testCity === "REDDING, CA" || testCity === "REDDING, CALIFORNIA") {
-            alert("Redding is Correct!");
-            } else {
-              alert("Sorry, I grew up in Redding");
-            };
-        // guess the city in Japan where I lived
-          var japan = prompt("In what city on Japan did I live?");
-              var testJapan = japan.toUpperCase();
-                console.log(testJapan);
-                if (testJapan === "TOYONAKA" || testJapan === "TOYONAKA, JAPAN") {
-                alert("That is correct!!");
-              } else {
-                alert("Sorry, I lived in Toyonaka.");
-              };
-        // guess my school
-          var university = prompt("Which University to I attend for my BS degree?");
-                var testUniversity = university.toUpperCase();
-                  console.log(testUniversity);
-              if (testUniversity === "SANTA CLARA" || testUniversity === "SANTA CLARA UNIVERSITY" || testUniversity === "SCU") {
-                alert("Correct! Go Broncos!!");
-              } else {
-                alert("Sorry, I went to Santa Clara University");
-              };
-
-        // Guess a number between 1 and 10
-          var myNumber = 4;
-          var guess = parseInt(prompt("Guess a number between 1 - 10"));
-                console.log(guess);
-              if (guess === myNumber) {
-                  alert("Correct!");
-                } else if (guess < myNumber) {
-                  alert("Too low");
-                } else {
-                  alert("Too high");
-                };
-
-          </script>
+        <script type="text/javascript" src="game.js">
+        </script>
     </body>
 </html>
