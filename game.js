@@ -45,7 +45,24 @@
               };
 
     // Send out the results of countCorrect
-      alert("You got " +countCorrect+ " out of 3 correct!");
+      //alert("You got " +countCorrect+ " out of 3 correct!");
+          switch (countCorrect) {
+            case 0:
+              alert("You don't know at all " +userName+ "ZERO CORRECT");
+              break;
+            case 1:
+              alert("Well at least you got ONE right "+userName);
+              break;
+            case 2:
+              alert("Nice "+userName+ " you got TWO right");
+              break;
+            case 3:
+              alert("Awesome "+userName+ " you got them ALL right");
+              break;
+            default:
+              alert("Thanks for playing.");
+            };
+
       // Guess a number between 1 and 10
           var myNumber = 4;
           var guess = parseInt(prompt("Guess a number between 1 - 10"));
