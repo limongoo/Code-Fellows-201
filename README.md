@@ -5,7 +5,8 @@
 ### CREATED WEB PAGE
 ----------------
   Started with a basic HTML resume page
-  Included <ul> and <ol> lists
+
+  Included ul and ol lists
 
 ### GET USER NAME
   Prompt to ask the user his/her name
