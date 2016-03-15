@@ -13,9 +13,9 @@
 
 ### MY HISTORY GUESSING GAME
   I then added a History Question game asking user:
-    - Where I grew up?
-    - Where in Japan I lived?
-    - Where I went to school?
+    -Where I grew up?
+    -Where in Japan I lived?
+    -Where I went to school?
 
 ### CORRECT ANSER COOUNTER
   Added counter to track number of correct History Questions
