@@ -81,11 +81,14 @@
               while (anotherGuess != targetNumber) {
                 anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
                       console.log(anotherGuess);
-                  if (anotherGuess === targetNumber) {
+                  if (anotherGuess < 1 || anotherGuess > 10 || isNaN(anotherGuess)) {
+                    alert("Please enter a NUMBER between 1 - 10 ONLY");
+                  }
+                    else if (anotherGuess === targetNumber) {
                         alert("Correct!");
-                      } else if (anotherGuess < targetNumber) {
-                        alert("Too low");
-                      } else {
-                    alert("Too high");
-                    }
-                  };
+                        } else if (anotherGuess < targetNumber) {
+                          alert("Too low");
+                          } else {
+                              alert("Too high");
+                            }
+                        };
