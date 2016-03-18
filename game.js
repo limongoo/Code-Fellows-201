@@ -12,16 +12,20 @@ function askName() {
 // Count right answers
     var countCorrect = 0;
 
-askQuestion("What is my hometown?", "Redding");
+askQuestion("What is my hometown?", "Redding", "result1");
+askQuestion("What city did I live in Japan?", "Toyonaka", "result2");
+askQuestion("What university did I attend?", "Santa Clara", "result3");
 
-function askQuestion(question, answer) {
+
+
+function askQuestion(question, answer, result) {
   var guess = prompt(question);
 console.log("question1");
   if (guess.toUpperCase() === answer.toUpperCase()) {
     countCorrect++;
-    document.getElementById('result1').innerHTML = "Correct";
+    document.getElementById(result).innerHTML = "Correct";
   } else {
-    document.getElementById('result1').innerHTML = "Sorry, wrong answer.";
+    document.getElementById(result).innerHTML = "Sorry, wrong answer.";
   }
 }
 
@@ -82,32 +86,34 @@ console.log("question1");
     //           alert("Thanks for playing.");
     //         };
     //
-    //   // Guess a number between 1 and 10
-    //       var myNumber = 4;
-    //       var guess = parseInt(prompt("Guess a number between 1 - 10"));
-    //               console.log(guess);
-    //               if (guess === myNumber) {
-    //                     alert("Correct!");
-    //                   } else if (guess < myNumber) {
-    //                     alert("Too low");
-    //                   } else {
-    //                 alert("Too high");
-    //             };
-    //
-    //   // Guess a number between 1 and 10 until correct
-    //       var anotherGuess;
-    //       var targetNumber = 8;
-    //           while (anotherGuess != targetNumber) {
-    //             anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
-    //                   console.log(anotherGuess);
-    //               if (anotherGuess < 1 || anotherGuess > 10 || isNaN(anotherGuess)) {
-    //                 alert("Please enter a NUMBER between 1 - 10 ONLY");
-    //               }
-    //                 else if (anotherGuess === targetNumber) {
-    //                     alert("Correct!");
-    //                     } else if (anotherGuess < targetNumber) {
-    //                       alert("Too low");
-    //                       } else {
-    //                           alert("Too high");
-    //                         }
-    //                     };
+      // Guess a number between 1 and 10
+
+      //
+      //     var myNumber = 4;
+      //     var guess = parseInt(prompt("Guess a number between 1 - 10"));
+      //             console.log(guess);
+      //             if (guess === myNumber) {
+      //                   alert("Correct!");
+      //                 } else if (guess < myNumber) {
+      //                   alert("Too low");
+      //                 } else {
+      //               alert("Too high");
+      //           };
+      //
+      // // Guess a number between 1 and 10 until correct
+      //     var anotherGuess;
+      //     var targetNumber = 8;
+      //         while (anotherGuess != targetNumber) {
+      //           anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
+      //                 console.log(anotherGuess);
+      //             if (anotherGuess < 1 || anotherGuess > 10 || isNaN(anotherGuess)) {
+      //               alert("Please enter a NUMBER between 1 - 10 ONLY");
+      //             }
+      //               else if (anotherGuess === targetNumber) {
+      //                   alert("Correct!");
+      //                   } else if (anotherGuess < targetNumber) {
+      //                     alert("Too low");
+      //                     } else {
+      //                         alert("Too high");
+      //                       }
+      //                   };
