@@ -6,14 +6,24 @@ function askName() {
     console.log("Test");
    var userName = "";
    userName = prompt("Hi I am James. Who are you?");
-      if (userName === "") {
-        userName = "Dummy";
    document.getElementById('answer1').innerHTML = "Hi " + userName + ", read my site to learn more about me.";
-}
+  }
 
-
-    // Count right answers
+// Count right answers
     var countCorrect = 0;
+
+askQuestion("What is my hometown?", "Redding");
+
+function askQuestion(question, answer) {
+  var guess = prompt(question);
+console.log("question1");
+  if (guess.toUpperCase() === answer.toUpperCase()) {
+    countCorrect++;
+    document.getElementById('result1').innerHTML = "Correct";
+  } else {
+    document.getElementById('result1').innerHTML = "Sorry, wrong answer.";
+  }
+}
 
     //
     //     // Guess my hometown
