@@ -86,34 +86,40 @@ console.log("question1");
     //           alert("Thanks for playing.");
     //         };
     //
-      // Guess a number between 1 and 10
 
-      //
-      //     var myNumber = 4;
-      //     var guess = parseInt(prompt("Guess a number between 1 - 10"));
-      //             console.log(guess);
-      //             if (guess === myNumber) {
-      //                   alert("Correct!");
-      //                 } else if (guess < myNumber) {
-      //                   alert("Too low");
-      //                 } else {
-      //               alert("Too high");
-      //           };
-      //
-      // // Guess a number between 1 and 10 until correct
-      //     var anotherGuess;
-      //     var targetNumber = 8;
-      //         while (anotherGuess != targetNumber) {
-      //           anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
-      //                 console.log(anotherGuess);
-      //             if (anotherGuess < 1 || anotherGuess > 10 || isNaN(anotherGuess)) {
-      //               alert("Please enter a NUMBER between 1 - 10 ONLY");
-      //             }
-      //               else if (anotherGuess === targetNumber) {
-      //                   alert("Correct!");
-      //                   } else if (anotherGuess < targetNumber) {
-      //                     alert("Too low");
-      //                     } else {
-      //                         alert("Too high");
-      //                       }
-      //                   };
+
+      //Guess a number between 1 and 10
+guessNumber(4);
+function guessNumber(target) {
+
+    var guess = parseInt(prompt("Guess a number between 1 - 10"));
+            console.log(guess);
+            if (guess === target) {
+                  alert("Correct!");
+                } else if (guess < target) {
+                  alert("Too low");
+                } else {
+              alert("Too high");
+          };
+}
+
+
+      // Guess a number between 1 and 10 until correct
+
+
+          var anotherGuess;
+          var targetNumber = 8;
+              while (anotherGuess != targetNumber) {
+                anotherGuess = parseInt(prompt("Let's try to guess a number between 1 - 10 again.\nThis time you'll keep guessing till you get it right."));
+                      console.log(anotherGuess);
+                  if (anotherGuess < 1 || anotherGuess > 10 || isNaN(anotherGuess)) {
+                    alert("Please enter a NUMBER between 1 - 10 ONLY");
+                  }
+                    else if (anotherGuess === targetNumber) {
+                        alert("Correct!");
+                        } else if (anotherGuess < targetNumber) {
+                          alert("Too low");
+                          } else {
+                              alert("Too high");
+                            }
+                        };
