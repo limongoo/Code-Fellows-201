@@ -106,7 +106,7 @@ function guessNumber(target) {
 
       // Guess a number between 1 and 10 until correct
 
-
+      //TODO: NEED TO TURN THE CODE BELOW INTO A FUNCTION
           var anotherGuess;
           var targetNumber = 8;
               while (anotherGuess != targetNumber) {
