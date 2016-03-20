@@ -1,8 +1,9 @@
 // Get user name
+
 askName();
 
 function askName() {
-  console.log("Test");
+    console.log("Test");
    var userName = "";
    userName = prompt("Hi I am James. Who are you?");
    document.getElementById('answer1').innerHTML = "Hi " + userName + ", read my site to learn more about me.";
@@ -90,6 +91,7 @@ console.log("question1");
       //Guess a number between 1 and 10
 guessNumber(4);
 function guessNumber(target) {
+
 
   var guess = parseInt(prompt("Guess a number between 1 - 10"));
     console.log(guess);

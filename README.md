@@ -1,5 +1,7 @@
 # Code-Fellows-201
 
+
+
 ## THIS IS THE GUESING GAME ASSIGNMENT
 ===================================
 
@@ -18,7 +20,10 @@
     -Where in Japan I lived?
     -Where I went to school?
 
-### CORRECT ANSER COUNTER
+
+
+### CORRECT ANSER COOUNTER
+
   Added counter to track number of correct History Questions
 
   Also added a Switch statement to report out the results
@@ -38,6 +43,7 @@
   Added a check to ensure guess was a number and between 1 - 10
 
   Then inform user is guess is correct or too high or too low
+
 
 ### PAIR PROGRAMING https://github.com/limongoo/
   I helped turned the existing js into functions and cut down a lot of code.
